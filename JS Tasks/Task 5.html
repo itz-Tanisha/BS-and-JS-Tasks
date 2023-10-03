@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+
+    <style>
+        label{
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+        #submit{
+            padding-left: 100px;
+        }
+        div{
+            margin-top: 1em;
+        }
+        textarea{
+            vertical-align: top;
+            height: 5em;
+        }
+        .error{
+            display: none;
+            margin-left: 10px;
+        }		
+
+        #nError, #eError, #webError, #msgError{
+            color: red;
+            margin-left: 10px;
+        }
+        input.invalid, textarea.invalid{
+            border: 2px solid red;
+        }
+
+        input.valid, textarea.valid{
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <form id="f1" name="f1" action="#" onsubmit="return validate()">
+        <!-- Name -->
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"></input>
+            <span id="nError">This field is required</span>
+        </div>
+        <!-- Email -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"></input>
+            <span id="eError">A valid email address is required</span>				
+        </div>						
+        <!--Website -->
+        <div>
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website"></input>
+            <span id="webError">A valid url is required</span>								
+        </div>						
+        <!-- Message -->
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <span id="msgError">This field is required</span>												
+        </div>					
+        <!-- Submit Button -->
+        <div id="submit">				
+            <button id="submitbtn" type="submit">Submit</button>
+        </div>
+    </form>
+    <!-- Script -->
+    <script src="Task 5.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+</body>
+</html>
