@@ -35,8 +35,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 3px;
     font-size: 16px;
-    box-sizing: border-box; /* Include padding in the width */
-  }
+    box-sizing: border-box; 
 
   input[type="submit"] {
     background-color: #ff1100;
