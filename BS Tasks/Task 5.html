@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <link rel="stylesheet" href="Task 5.css">
+</head>
+<body class="main">
+  <form>
+        <table> 
+            <tr>
+                <th><label for="fname">First Name</label></th>
+                <td><input type="text" name="fname" id="fname" placeholder="First Name" required></td>
+              </tr>
+
+              <tr>
+                <th><label for="lname">Last Name</label></th>
+                <td><input type="text" name="lname" id="lname" placeholder="Last Name" required></td>
+              </tr>
+
+              <tr>
+                <th><label for="email">Email</label></th>
+                <td><input type="email" name="email" id="email" placeholder="E-mail Address" required></td>
+              </tr>
+
+              <tr>
+                <th><label for="phoneNumber">Phone #</label></th>
+                <td><input type="number" name="phoneNumber" id="phoneNumber" placeholder="(845)555-1212" required></td>
+              </tr>
+
+              <tr>
+                <th><label for="address">Address</label></th>
+                <td><input type="text" name="address" id="address" placeholder="Address" required></td>
+              </tr>
+
+              <tr>
+                <th><label for="city">City</label></th>
+                <td><input type="text" name="city" id="city" placeholder="city" required></td>
+              </tr>
+
+              <tr>
+                <th><label for="state">State</label></th>
+                <td>
+                  <select name="state" id="state">
+                    <option value="">Please select your state</option>
+                    <option value="English">English</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="French">French</option>
+                    <option value="Russian">Russian</option>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <th><label for="hosting">Do you have hosting ?</label></th>
+                <td><input type="radio" name="hosting" value="yes"> Yes <br>
+                    <input type="radio" name="hosting" value="no"> No
+                </td>
+              </tr>
+
+              <tr>
+                <th><label for="desc">Project Description</label></th>
+                <td><textarea name="about" id="about" placeholder="Project Description"></textarea></td>
+              </tr>
+        </table>
+        <table id="send">
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Send
+                    <span class="submit-icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </span>
+                    </button>
+                </td>
+            </tr>
+        </table>      
+  </form>
+        <script src="https://kit.fontawesome.com/5d4942fdb5.js" crossorigin="anonymous"></script>
+</body>
+</html>
