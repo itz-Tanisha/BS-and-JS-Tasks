@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Task 1</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        h1{
+            background-color: cyan;
+            padding: 10px;
+            text-align: center;
+            margin: 0px;
+        }
+        .container-fluid{
+            width: 100%;
+            margin: 0px;
+            text-align: center;
+        }
+        .col-md-2{
+            background-color: grey;
+            height: 670px;
+            padding: 10px;
+        }
+        .col-md-10{
+            padding: 10px;
+        }
+        nav{
+            width: 100%;
+            background-color: rgb(252, 109, 109);
+            color: white;
+            padding: 7px;
+            display: flex;
+            padding: 7px;
+            
+        }
+        .left, .right{
+            display: flex;
+            column-gap: 3rem;
+        }
+        
+    </style>
+</head>
+<body>
+        <h1 class="text-black">Ethnus Layout</h1>
+        <nav>
+            <div class="left">
+                <a href="#" >HOME</a>
+                <a href="#">MENU</a>
+                <a href="#">ABOUT</a>
+                <a href="#">CONTACT</a>
+            <div class="right">
+                <a href="#">LOGIN</a>
+                <a href="#">SIGNUP</a>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10">
+                    <p>This is the main content area with 9 columns.</p>
+                </div>
+                
+                <div class="col-md-2">
+                    <p>This is the sidebar with 3 columns.</p>
+                </div>
+            </div>
+        </div>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
