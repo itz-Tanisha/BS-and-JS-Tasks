@@ -1,8 +1,8 @@
 let animationInterval;
 let isAnimating = false;
-let currentPosition = 0; // Store the current position
-let direction = 1; // 1 for right, -1 for left
-const step = 5; // Adjust the step size by changing this value
+let currentPosition = 0; 
+let direction = 1; 
+const step = 5; 
 const container = document.getElementById("container");
 const movingImage = document.getElementById("movingImage");
 const startButton = document.getElementById("startButton");
@@ -21,15 +21,15 @@ function toggleAnimation() {
       currentPosition += step * direction;
 
       if (currentPosition >= container.clientWidth) {
-        direction = -1; // Change direction to move left
-        movingImage.style.transform = "scaleX(-1)"; // Flip the image horizontally
+        direction = -1; 
+        movingImage.style.transform = "scaleX(-1)"; 
       } else if (currentPosition <= -movingImage.clientWidth) {
-        direction = 1; // Change direction to move right
-        movingImage.style.transform = "scaleX(1)"; // Reset the image's horizontal scale
+        direction = 1; 
+        movingImage.style.transform = "scaleX(1)"; 
       }
 
       movingImage.style.left = currentPosition + "px";
-    }, 50); // Adjust the animation speed by changing this value
+    }, 50);
   } else {
     stopAnimation();
   }
