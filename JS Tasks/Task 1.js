@@ -1,12 +1,11 @@
-function reverse_a_number(num) {
-    let reversed_num = 0;
-    while (num !== 0) {
-      reversed_num = reversed_num * 10 + num % 10;
-      num = Math.floor(num / 10);
-    }
-    return reversed_num;
-  }
-  const num = 32243;
-  console.log("Original number: "+num);
-  const result = reverse_a_number(num);
-  console.log("Reversed number: "+result);
+      let num = document.getElementById("num");
+      function rev() {
+        let rev = 0;
+        let n = num.value;
+        while (n > 0) {
+          rev = rev * 10 + (n % 10);
+          n = Math.floor(n / 10);
+        }
+        document.getElementById("ans").innerHTML =
+          "The reverse of " + num.value + " is " + rev;
+      }
