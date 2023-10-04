@@ -7,12 +7,26 @@
     <script src="Task 1.js"></script>
 </head>
 <body>
-    <h3>Reverse a Number</h3>
+<h3>Reverse a Number</h3>
     <form action="">
       <label for="num">Input: </label>
       <input type="number" id="num" name="num" />
       <input type="button" value="Submit" onclick="rev()" />
     </form>
     <p id="ans"></p>
+
+    <script>
+      let num = document.getElementById("num");
+      function rev() {
+        let rev = 0;
+        let n = num.value;
+        while (n > 0) {
+          rev = rev * 10 + (n % 10);
+          n = Math.floor(n / 10);
+        }
+        document.getElementById("ans").innerHTML =
+          "The reverse of " + num.value + " is " + rev;
+      }
+    </script>
 </body>
 </html>
