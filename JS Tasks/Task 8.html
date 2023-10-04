@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 8</title>
+    <link rel="stylesheet" href="style 8.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registration Form</h1>
+      <form novalidate>
+        <div class="in-grp">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" />
+          <p id="pfn"></p>
+        </div>
+        <div class="in-grp">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" />
+          <p id="pln"></p>
+        </div>
+
+        <div class="in-grp">
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+          <p id="pem"></p>
+        </div>
+
+        <div class="in-grp">
+          <label for="pwd">Password</label>
+          <input type="password" id="pwd" />
+          <p id="ppwd"></p>
+        </div>
+
+        <div class="in-grp">
+          <label for="repwd">Re-Password</label>
+          <input type="password" id="repwd" />
+          <p id="prepwd"></p>
+        </div>
+
+        <div class="in-grp">
+          <label for="age">Age</label>
+          <input type="number" id="age" />
+          <p id="page"></p>
+        </div>
+        <div class="check">
+          <label for="gender">Gender</label>
+          <input type="checkbox" id="gender" value="Male" />Male
+          <input type="checkbox" id="gender" value="Female" />Female
+        </div>
+
+        <div class="in-grp">
+          <label for="phn">Phone Number</label>
+          <input type="number" id="phn" />
+          <p id="pphn"></p>
+        </div>
+
+        <div class="in-grp">
+          <label for="address">Address</label>
+          <textarea id="address"></textarea>
+          <p id="padd"></p>
+        </div>
+
+        <div class="in-grp">
+          <label for="state">State</label>
+          <input type="text" id="state" />
+          <p id="pstt"></p>
+        </div>
+
+        <div class="in-grp">
+          <label for="country">Country</label>
+          <select id="country">
+            <option value="def" selected>Select a country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+          </select>
+        </div>
+        <div class="check">
+          <label for="lang">Languages Known</label>
+          <input type="checkbox" id="lang" value="English" />English
+          <input type="checkbox" id="lang" value="Telugu" />Telugu
+          <input type="checkbox" id="lang" value="Hindi" />Hindi
+          <input type="checkbox" id="lang" value="Kannada" />Kannada
+        </div>
+        <div class="check">
+          <input type="checkbox" id="declaration" />Hereby I declare all the
+          given details are true.
+        </div>
+        <p style="margin-left: auto; margin-right: 150px">
+          Login to <a href="#">Ethnus</a> website.
+        </p>
+        <input type="button" value="Register" onclick="validate()" />
+      </form>
+    </div>
+    <script src="script 8.js"></script>
+  </body>
+</html>
